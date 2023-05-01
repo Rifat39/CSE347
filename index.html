@@ -36,13 +36,18 @@
         },
       };
     </script>
-
-    <title>Home</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <script src="script/main.js"></script>
+    <title>
+      Shahazzo [In Islam, generosity is greatly loved by Allah SWT and those who
+      give to help others shall receive infinite reward from their Lord.]
+    </title>
   </head>
   <body>
-    <header class="bg-primary h-24">
+    <header class="bg-primary md:h-24">
       <nav
-        class="flex justify-between items-center h-24 max-w-7xl w-full mx-auto"
+        class="flex flex-col md:flex-row justify-between items-center md:h-24 gap-4 md:gap-0 py-3 max-w-7xl w-full mx-auto"
       >
         <div class="flex items-center gap-3">
           <img src="images/icon.png" alt="" class="w-12" />
@@ -50,17 +55,17 @@
         </div>
         <div class="font-Roboto text-white">
           <ul class="flex gap-10">
-            <li><a href="">Home</a></li>
-            <li><a href="">Campaign</a></li>
-            <li><a href="">Donate</a></li>
-            <li><a href="">Pickup</a></li>
+            <li class="nav-element"><a href="">Home</a></li>
+            <li class="nav-element"><a href="">Campaign</a></li>
+            <li class="nav-element"><a href="">Donate</a></li>
+            <li class="nav-element"><a href="">Pickup</a></li>
           </ul>
         </div>
         <div class="font-Garamond flex items-center gap-4">
           <button class="bg-tertiary w-20 h-8 rounded-[4px] font-extrabold">
             বাংলা</button
           ><button
-            class="bg-buttonClr w-36 h-12 rounded-3xl text-2xl text-white"
+            class="bg-buttonClr w-28 md:w-36 h-10 md:h-12 rounded-3xl text-xl md:text-2xl text-white"
           >
             Sign in
           </button>
@@ -69,21 +74,42 @@
     </header>
     <main class="bg-body">
       <section class="max-w-7xl w-full mx-auto pt-28">
-        <div class="mx-4">
-          <img src="images/children.png" alt="" />
+        <div class="custom-cls h-[300px] md:h-[500px]">
+          <div class="container">
+            <input
+              type="radio"
+              name="slider"
+              id="item-1"
+              class="input-cls"
+              checked
+            />
+            <input type="radio" name="slider" id="item-2" class="input-cls" />
+            <input type="radio" name="slider" id="item-3" class="input-cls" />
+            <div class="cards">
+              <label class="card" for="item-1" id="song-1">
+                <img src="images/donation1.jpg" alt="song" class="image-cls" />
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img src="images/donation2.jpg" alt="song" class="image-cls" />
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img src="images/donation3.jpg" alt="song" class="image-cls" />
+              </label>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="max-w-7xl w-full mx-auto pt-28">
-        <form action="" class="flex justify-center">
+      <section class="max-w-7xl w-full mx-auto pt-16">
+        <form action="" class="flex justify-center mx-2 md:mx-0">
           <input
             type="text"
             placeholder="search here..."
             name=""
-            class="bg-search w-[340px] h-12 font-medium text-lg rounded-l-3xl pl-6 block"
+            class="bg-search w-[338px] h-11 font-medium text-lg rounded-l-3xl pl-6 block border-l-2 border-y-2 border-primary"
           />
           <button
             type="submit"
-            class="w-24 h-12 bg-primary text-white rounded-r-3xl font-Garamond text-lg"
+            class="w-[85px] h-11 bg-primary text-white rounded-r-3xl font-Garamond text-lg border-r-2 border-y-2 border-primary"
           >
             Search
           </button>
@@ -95,11 +121,9 @@
           </h1>
         </div>
         <div class="flex justify-center">
-          <a
-            href="https://www.youtube.com/watch?v=prmmCg5bKxA&list=RD1kehqCLudyg&index=11"
-          >
+          <a href="">
             <button
-              class="mt-12 bg-primary text-white font-Garamond text-2xl w-36 h-14 rounded-md"
+              class="mt-12 bg-primary text-white font-Garamond text-2xl w-36 h-14 rounded-md grow-btn"
             >
               Donate
             </button></a
@@ -110,9 +134,9 @@
         <h2 class="text-center font-Garamond text-textClr text-5xl">
           Our Collections
         </h2>
-        <div class="grid grid-cols-3 gap-8 mx-28 mt-12">
+        <div class="grid md:grid-cols-3 gap-y-8 md:gap-8 mx-4 md:mx-28 mt-12">
           <div
-            class="w-full bg-secondary flex flex-col items-center gap-6 py-16"
+            class="w-full bg-secondary flex flex-col items-center gap-6 py-16 grow"
           >
             <img src="images/image1.png" alt="" class="w-28" />
             <div
@@ -123,7 +147,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-secondary flex flex-col items-center gap-6 py-16"
+            class="w-full bg-secondary flex flex-col items-center gap-6 py-16 grow"
           >
             <img src="images/image2.png" alt="" class="w-28" />
             <div
@@ -134,7 +158,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-secondary flex flex-col items-center gap-6 py-16"
+            class="w-full bg-secondary flex flex-col items-center gap-6 py-16 grow"
           >
             <img src="images/image3.png" alt="" class="w-28" />
             <div
@@ -145,7 +169,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-secondary flex flex-col items-center gap-6 py-16"
+            class="w-full bg-secondary flex flex-col items-center gap-6 py-16 grow"
           >
             <img src="images/image4.png" alt="" class="w-28" />
             <div
@@ -156,7 +180,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-secondary flex flex-col items-center gap-6 py-16"
+            class="w-full bg-secondary flex flex-col items-center gap-6 py-16 grow"
           >
             <img src="images/image5.png" alt="" class="w-28" />
             <div
@@ -167,7 +191,7 @@
             </div>
           </div>
           <div
-            class="w-full bg-secondary flex flex-col items-center gap-6 py-16"
+            class="w-full bg-secondary flex flex-col items-center gap-6 py-16 grow"
           >
             <img src="images/image6.png" alt="" class="w-28" />
             <div
@@ -184,7 +208,7 @@
       <section class="max-w-7xl w-full mx-auto">
         <div class="mx-4">
           <img src="images/icon.png" alt="" class="w-12" />
-          <div class="mt-4 text-white grid grid-cols-4">
+          <div class="mt-4 text-white grid md:grid-cols-4">
             <div>
               <h3 class="font-Garamond text-xl">Quick Links</h3>
               <ul class="font-Roboto font-thin text-sm text-yellow-50">
@@ -196,7 +220,9 @@
             </div>
             <div class="md:mr-36 md:-ml-28">
               <h3 class="font-Garamond text-xl">About Us</h3>
-              <p class="text-justify font-Roboto font-thin text-sm mt-3">
+              <p
+                class="text-justify font-Roboto font-thin text-sm mt-3 mb-3 md:mb-0"
+              >
                 Shahazzo.com is a non-profit donation website that aims to
                 empower individuals and communities through the power of giving.
                 Our mission is to make it easy for people to donate to causes
@@ -206,7 +232,7 @@
             </div>
             <div class="md:-ml-14">
               <h3 class="font-Garamond text-xl">Contact Now</h3>
-              <p class="font-Roboto font-thin text-sm mt-6 mb-3">
+              <p class="font-Roboto font-thin text-sm mt-3 md:mt-6 mb-3">
                 Jahurul Islam City Gate, <br />
                 A/2 Jahurul Islam Ave, Dhaka 1212
               </p>
@@ -215,7 +241,7 @@
                   >shahazzo392000@gmail.com</a
                 >
               </p>
-              <div class="flex gap-3">
+              <div class="flex gap-3 mb-6 md:mb-0">
                 <a href=""
                   ><img src="images/facebook.png" alt="" class="w-7"
                 /></a>
@@ -230,7 +256,9 @@
             </div>
             <div class="md:-ml-14">
               <h3 class="font-Garamond text-xl">Subscribe</h3>
-              <p class="font-Roboto font-thin text-sm mt-6 mb-5">
+              <p
+                class="font-Roboto font-thin text-sm mt-3 md:mt-6 mb-3 md:mb-5"
+              >
                 Subscribe for our latest & Articles. <br />
                 We Won't Give You Spam Mails
               </p>
