@@ -81,7 +81,7 @@
 .nav-element:hover{
   color: #FF7A00;
 }
-.grow:hover ,.nav-element:hover
+.grow:hover ,.nav-element:hover,.grow-camp:hover
 {
  -webkit-transform: scale(1.03);
  -ms-transform: scale(1.03);
@@ -167,4 +167,12 @@
  animation: swing 1s ease;
  -webkit-animation-iteration-count: 1;
  animation-iteration-count: 1;
+}
+.fade
+{
+ opacity:0.8;
+}
+.fade:hover
+{
+ opacity:1;
 }
