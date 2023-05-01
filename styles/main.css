@@ -115,10 +115,6 @@
   animation-iteration-count: 1;
 }
 
-.fade {
-  opacity: 0.8;
-}
-
 .fade:hover {
-  opacity: 1;
+  opacity: 0.4;
 }/*# sourceMappingURL=main.css.map */
