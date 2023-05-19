@@ -125,6 +125,10 @@
   border-radius: var(--borderWidth);
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .gradient-border:after {
   content: "";
   position: absolute;

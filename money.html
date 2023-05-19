@@ -85,15 +85,15 @@
       </nav>
     </header>
     <main>
-      <section class="max-w-7xl w-full mx-auto pt-16">
+      <section class="max-w-7xl w-full mx-auto pt-12 md:pt-24 md:px-36 px-4">
         <div
           class="h-10 rounded-lg border-2 border-primary w-48 flex justify-center items-center mb-10"
         >
           <div>
             <input
               type="radio"
-              checked="checked"
               id="e2"
+              checked="checked"
               name="r1"
               onchange="show(this.value)"
             /><label for="e2"
@@ -109,15 +109,46 @@
           </div>
         </div>
 
-        <div id="sh1">
+        <div id="sh1" class="md:mt-20">
           <div
-            class="w-[600px] rounded-lg border-2 border-primary h-96 relative"
+            class="md:w-[600px] rounded-lg border-2 border-primary h-96 relative"
           >
             <p
               class="mt-6 text-center text-red-600 font-Garamond font-extrabold text-xl"
             >
               !! Caution Must be donate 500 Tk or More !!
             </p>
+            <div class="pl-4 pt-6">
+              <form action="">
+                <label
+                  for="Amount"
+                  class="font-Garamond text-xl block md:inline"
+                  >Amount</label
+                >
+                <input
+                  type="number"
+                  id="Amount"
+                  name="Amount"
+                  placeholder="number in digit"
+                  class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-60 h-10 md:ml-20 pl-4 mb-4 md:mb-0"
+                />
+                <br class="hidden md:block" />
+                <br class="hidden md:block" />
+                <label
+                  for="contactnumber"
+                  class="font-Garamond text-xl block md:inline"
+                  >Contact Number</label
+                >
+                <input
+                  type="number"
+                  id="contactnumber"
+                  name="contactnumber"
+                  placeholder="number in digit"
+                  class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-60 h-10 md:ml-2 pl-4"
+                />
+              </form>
+            </div>
+
             <div
               class="absolute -top-4 left-2 w-20 h-8 bg-body flex justify-center items-center rounded-md border-2 border-primary"
             >
@@ -125,31 +156,10 @@
             </div>
           </div>
         </div>
-        <div id="sh2" style="display: none">
+        <div id="sh2" style="display: none" class="md:mt-20">
           <div
-            class="w-[600px] rounded-lg border-2 border-primary h-96 relative"
+            class="md:w-[600px] rounded-lg border-2 border-primary h-96 relative"
           >
-            <div class="flex my-10">
-              <p>Amount</p>
-              <form action="">
-                <input
-                  type="text"
-                  placeholder="Number in Digit"
-                  class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-medium bg-search text-[#242124]"
-                />
-              </form>
-            </div>
-            <div class="flex my-10">
-              <p>Contact Number</p>
-              <form action="">
-                <input
-                  type="text"
-                  placeholder="Must be provide numeric value"
-                  class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-medium bg-search text-[#242124]"
-                />
-              </form>
-            </div>
-
             <div
               class="absolute -top-4 left-2 w-20 h-8 bg-body flex justify-center items-center rounded-md border-2 border-primary"
             >
