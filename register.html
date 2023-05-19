@@ -46,7 +46,7 @@
     <script src="script/main.js"></script>
     <title>Sign in [Provide the information</title>
   </head>
-  <body class="bg-[#E4E9E8]">
+  <body class="bg-body">
     <header class="bg-primary md:h-24">
       <nav
         class="flex flex-col md:flex-row justify-between items-center md:h-24 gap-4 md:gap-0 py-3 max-w-7xl w-full mx-auto"
@@ -85,48 +85,47 @@
     <main>
       <section class="box-border flex justify-center items-center mt-[100px]">
         <div
-          class="bg-white font-Garamond p-4 mx-4 md:mx-0 relative rounded-lg border-2 border-primary"
+          class="font-Garamond p-4 mx-4 md:mx-0 relative rounded-lg border-2 border-primary"
         >
           <h1 class="text-primary text-[30px] mb-5">Create an account</h1>
-          
+
           <form action="">
-            <label for="name" class="text-xl mb-1 block">Name</label for="">
+            <label for="name" class="text-xl mb-1 block">Name</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Provide your valid name"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
+              class="w-[300px] bg-body h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
-          </form>
-          
-          <form action="">
-            <label for="moborem1" class="text-xl mt-3 mb-1 block">Mobile or Email</label >
+
+            <label for="moborem1" class="text-xl mt-3 mb-1 block"
+              >Mobile or Email</label
+            >
             <input
-            id="moborem1"
-            name="moborem1"
+              id="moborem1"
+              name="moborem1"
               type="text"
               placeholder="Mobile Number or Email"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
+              class="w-[300px] bg-body h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
-          </form>
-          
-          <form action="">
-            <label for="pass1" class="text-xl mt-3 mb-1 block">Password</label >
+
+            <label for="pass1" class="text-xl mt-3 mb-1 block">Password</label>
             <input
-            id="pass1"
-            name="pass1"
+              id="pass1"
+              name="pass1"
               type="password"
               placeholder="Set your Password"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
+              class="w-[300px] bg-body h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
-          </form>
 
-          <button
-            class="w-[300px] h-10 bg-primary mt-5 text-white text-lg rounded-lg"
-          >
-            Submit
-          </button>
+            <button
+              type="button"
+              class="w-[300px] h-10 bg-primary mt-5 text-white text-lg rounded-lg block"
+            >
+              Submit
+            </button>
+          </form>
           <p class="mt-5 text-center">
             <a href="signin.html" class="text-tertiary">Already registered?</a>
           </p>

@@ -46,7 +46,7 @@
     <script src="script/main.js"></script>
     <title>Sign in [Provide the information</title>
   </head>
-  <body class="bg-[#E4E9E8]">
+  <body class="bg-body">
     <header class="bg-primary md:h-24">
       <nav
         class="flex flex-col md:flex-row justify-between items-center md:h-24 gap-4 md:gap-0 py-3 max-w-7xl w-full mx-auto"
@@ -85,7 +85,7 @@
     <main>
       <section class="box-border flex justify-center items-center mt-20">
         <div
-          class="bg-white font-Garamond p-4 mx-4 md:mx-0 rounded-lg border-2 border-primary"
+          class="font-Garamond p-4 mx-4 md:mx-0 rounded-lg border-2 border-primary"
         >
           <h1 class="text-primary text-[30px] mb-5">Sign in to our platform</h1>
 
@@ -98,36 +98,38 @@
               id="moborem"
               name="moborem"
               placeholder="Enter Your Mobile or Email"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
+              class="w-[300px] bg-body h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
-          </form>
-          <form action="">
+
             <label for="pass" class="text-xl mt-3 mb-1 block">Password</label>
             <input
               id="pass"
               name="pass"
               type="password"
               placeholder="Enter Your Password"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
+              class="w-[300px] bg-body h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
-          </form>
-          <div class="flex justify-between mt-5">
-            <form action="">
-              <input type="checkbox" id="remember" name="remember" value="" />
-              <label for="remember" class="font-light">Remember me</label>
-            </form>
-            <p class="text-tertiary"><a href="">Forget Password?</a></p>
-          </div>
 
-          <button
-            class="w-[300px] h-10 bg-primary mt-5 text-white text-lg rounded-lg"
-          >
-            Sign in to your account
-          </button>
-          <p class="mt-5">
-            Not registered?
-            <a href="register.html" class="text-tertiary"> Create account</a>
-          </p>
+            <div class="flex justify-between mt-5">
+              <div>
+                <input type="checkbox" id="remember" name="remember" value="" />
+                <label for="remember" class="font-light">Remember me</label>
+              </div>
+
+              <p class="text-tertiary"><a href="">Forget Password?</a></p>
+            </div>
+
+            <button
+              type="submit"
+              class="w-[300px] h-10 bg-primary mt-5 text-white text-lg rounded-lg"
+            >
+              Sign in to your account
+            </button>
+            <p class="mt-5">
+              Not registered?
+              <a href="register.html" class="text-tertiary"> Create account</a>
+            </p>
+          </form>
         </div>
       </section>
     </main>
