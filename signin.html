@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/ed0c74a592.js"
       crossorigin="anonymous"
@@ -31,6 +35,7 @@
             fontFamily: {
               Garamond: ["EB Garamond", "serif"],
               Roboto: ["Roboto", "sans-serif"],
+              Podkova: ["Podkova", "serif"],
             },
           },
         },
@@ -83,20 +88,27 @@
           class="bg-white font-Garamond p-4 mx-4 md:mx-0 rounded-lg border-2 border-primary"
         >
           <h1 class="text-primary text-[30px] mb-5">Sign in to our platform</h1>
-          <h4 class="text-xl mb-1">Mobile or Email</h4>
+
           <form action="">
+            <label for="moborem" class="text-xl mb-1 block"
+              >Mobile or Email</label
+            >
             <input
               type="text"
+              id="moborem"
+              name="moborem"
               placeholder="Enter Your Mobile or Email"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-medium bg-search text-[#242124]"
+              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
           </form>
-          <h4 class="text-xl mt-3 mb-1">Password</h4>
           <form action="">
+            <label for="pass" class="text-xl mt-3 mb-1 block">Password</label>
             <input
+              id="pass"
+              name="pass"
               type="password"
               placeholder="Enter Your Password"
-              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-medium bg-search text-[#242124]"
+              class="w-[300px] h-10 pl-4 border-2 border-primary rounded-lg font-Podkova text-lg"
             />
           </form>
           <div class="flex justify-between mt-5">
