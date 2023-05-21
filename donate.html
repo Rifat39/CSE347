@@ -12,9 +12,9 @@
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Podkova&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Podkova&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/ed0c74a592.js"
       crossorigin="anonymous"
@@ -67,7 +67,6 @@
               <a href="donate.html">Donate</a>
               <hr />
             </li>
-          
           </ul>
         </div>
         <div class="font-Garamond flex items-center gap-4">
@@ -97,17 +96,17 @@
                 src="images/Donate1.png"
                 alt=""
                 title="Money [click me]"
-                class="border-[3px]  border-primary rounded-3xl bg-center fade hover:saturate-200"
+                class="border-[3px] border-primary rounded-3xl bg-center fade hover:saturate-200"
             /></a>
             <h2 class="mt-4">Money</h2>
           </div>
           <div>
             <img
-                src="images/Donate2.png"
-                alt=""
-                title="Blood [click me]"
-                class="border-[3px] cursor-pointer border-primary rounded-3xl bg-center fade hover:saturate-200"
-                id="myBtn"
+              src="images/Donate2.png"
+              alt=""
+              title="Blood [click me]"
+              class="border-[3px] cursor-pointer border-primary rounded-3xl bg-center fade hover:saturate-200"
+              id="myBtn"
             />
             <h2 class="mt-4">Blood</h2>
           </div>
@@ -117,7 +116,7 @@
                 src="images/Donate3.png"
                 alt=""
                 title="Books [click me]"
-                class="border-[3px]  border-primary rounded-3xl bg-center fade hover:saturate-200"
+                class="border-[3px] border-primary rounded-3xl bg-center fade hover:saturate-200"
             /></a>
             <h2 class="mt-4">Books</h2>
           </div>
@@ -127,7 +126,7 @@
                 src="images/Donate4.png"
                 alt=""
                 title="Clothes [click me]"
-                class="border-[3px]  border-primary rounded-3xl bg-center fade hover:saturate-200"
+                class="border-[3px] border-primary rounded-3xl bg-center fade hover:saturate-200"
             /></a>
             <h2 class="mt-4">Clothes</h2>
           </div>
@@ -137,125 +136,162 @@
                 src="images/Donate5.png"
                 alt=""
                 title="Medicines [click me]"
-                class="border-[3px]  border-primary rounded-3xl bg-center fade hover:saturate-200"
+                class="border-[3px] border-primary rounded-3xl bg-center fade hover:saturate-200"
             /></a>
             <h2 class="mt-4">Medicines</h2>
           </div>
           <div>
             <img
-                src="images/Donate6.png"
-                alt=""
-                title="Foods [click me]"
-                class="border-[3px] cursor-pointer border-primary rounded-3xl bg-center fade hover:saturate-200"
-                id="myBtn1"
+              src="images/Donate6.png"
+              alt=""
+              title="Foods [click me]"
+              class="border-[3px] cursor-pointer border-primary rounded-3xl bg-center fade hover:saturate-200"
+              id="myBtn1"
             />
             <h2 class="mt-4">Foods</h2>
           </div>
         </div>
       </section>
       <section>
-<!--Blood-->
-        <div id="myModal" class="modal ">
+        <!--Blood-->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div
+            class="modal-content md:w-[450px] py-12 rounded-lg bg-body relative mx-4 md:mx-auto"
+          >
+            <div>
+              <p
+                class="close font-black text-red-600 text-2xl cursor-pointer absolute top-2 right-6 hover:text-red-800"
+              >
+                &times;
+              </p>
+            </div>
 
-        <!-- Modal content -->
-        <div class="modal-content md:w-[450px]  py-12 rounded-lg bg-body relative mx-4 md:mx-auto ">
-          <div ><p class="close font-black text-red-600 text-2xl cursor-pointer absolute top-2 right-6 hover:text-red-800 ">&times;</p></div>
-          
-          <div >
-                <div
-                  class="md:w-[380px] rounded-lg border-2 border-primary  relative "
-                >
-                 
-                  <div class="pl-4 pt-6 pr-4 md:pr-0">
-                    <form action="">
-                      <label for="blood" class="font-Garamond text-xl block md:inline">Choose your blood type </label>
-                      <select name="blood" id="blood"   class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-20 h-10 md:ml-7 pl-4">
-                        <option value="A+">O+</option>
-                        <option value="B+">A+</option>
-                        <option value="O+">B+</option>
-                        <option value="A-">O-</option>
-                        <option value="B-">A-</option>
-                        <option value="O-">B-</option>
-                      </select>
-                      <br class="hidden md:block" />
-                      <br class="hidden md:block" />
-                      <label
-                        for="dateandtime"
-                        class="font-Garamond text-xl block md:inline"
-                        >Date and Time</label
-                      >
-                      <input
-                        type="datetime-local"
-                        id="dateandtime"
-                        name="dateandtime"
-                        class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-44 h-10 md:ml-7 pl-4"
-                      />
-                      <div class="flex justify-center md:mt-5 mb-3">
-                        <button
-                          type="submit"
-                          class="w-[80px] h-10 bg-primary mt-5 text-white text-xl rounded font-Garamond"
-                        >
-                          Go
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-        </div>
-      
-      </div>
-  <!--Food-->
-  <div id="myModal1" class="modal ">
-
-    <!-- Modal content -->
-    <div class="modal-content md:w-[450px]  py-12 rounded-lg bg-body relative mx-4 md:mx-auto ">
-      <div ><p class="close1 font-black text-red-600 text-2xl cursor-pointer absolute top-2 right-6 hover:text-red-800 ">&times;</p></div>
-      
-      <div >
-            <div
-              class="md:w-[380px] rounded-lg border-2 border-primary  relative "
-            >
-             <div class="pl-4 w-36"><h1 class="font-Garamond text-lg text-red-600 pl-2 ">1 Box Required</h1>
-              <ul class="font-Podkova  w-36 border-2 border-primary rounded-lg pl-2 bg-[#a0e0f9] block"><li>1 kg Rice</li>
-              <li>1 Liter Oil</li>
-              <li>1 kg Wheat</li>
-              <li>1/2 kg Wheat</li>
-              <li>1 kg Lentil</li></ul></div>
-              <div class="pl-4 pt-6 pr-4 md:pr-0">
-                <form action="">
-                  <label for="food" class="font-Garamond text-xl block md:inline ">Choose Number of Box You Donate</label>
-                  <input type="number" name="food" id="food" class="bg-body border-2 border-primary rounded-md font-Podkova text-lg pl-2 h-8 w-32 md:mt-2" value="1">
-                  
-                  <br class="hidden md:block" />
-                  <br class="hidden md:block" />
-                  <label
-                    for="dateandtime1"
-                    class="font-Garamond text-xl block md:inline"
-                    >Date and Time</label
-                  >
-                  <input
-                    type="datetime-local"
-                    id="dateandtime1"
-                    name="dateandtime1"
-                    class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-44 h-8 ml-2  pl-2"
-                  />
-                  <div class="flex justify-center md:mt-5 mb-3">
-                    <button
-                      type="submit"
-                      class="w-[80px] h-10 bg-primary mt-5 text-white text-xl rounded font-Garamond"
+            <div>
+              <div
+                class="md:w-[380px] rounded-lg border-2 border-primary relative"
+              >
+                <div class="pl-4 pt-6 pr-4 md:pr-0">
+                  <form action="">
+                    <label
+                      for="blood"
+                      class="font-Garamond text-xl block md:inline"
+                      >Choose your blood type
+                    </label>
+                    <select
+                      name="blood"
+                      id="blood"
+                      class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-20 h-10 md:ml-7 pl-4"
                     >
-                      Go
-                    </button>
-                  </div>
-                </form>
+                      <option value="A+">O+</option>
+                      <option value="B+">A+</option>
+                      <option value="O+">B+</option>
+                      <option value="A-">O-</option>
+                      <option value="B-">A-</option>
+                      <option value="O-">B-</option>
+                    </select>
+                    <br class="hidden md:block" />
+                    <br class="hidden md:block" />
+                    <label
+                      for="dateandtime"
+                      class="font-Garamond text-xl block md:inline"
+                      >Date and Time</label
+                    >
+                    <input
+                      type="datetime-local"
+                      id="dateandtime"
+                      name="dateandtime"
+                      class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-44 h-10 md:ml-7 pl-4"
+                    />
+                    <div class="flex justify-center md:mt-5 mb-3">
+                      <button
+                        type="submit"
+                        class="w-[80px] h-10 bg-primary mt-5 text-white text-xl rounded font-Garamond"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-    </div>
-  
-  </div>
-    </section>
+        </div>
+        <!--Food-->
+        <div id="myModal1" class="modal">
+          <!-- Modal content -->
+          <div
+            class="modal-content md:w-[450px] py-12 rounded-lg bg-body relative mx-4 md:mx-auto"
+          >
+            <div>
+              <p
+                class="close1 font-black text-red-600 text-2xl cursor-pointer absolute top-2 right-6 hover:text-red-800"
+              >
+                &times;
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="md:w-[380px] rounded-lg border-2 border-primary relative"
+              >
+                <div class="pl-4 w-36">
+                  <h1 class="font-Garamond text-lg text-red-600 pl-2">
+                    1 Box Required
+                  </h1>
+                  <ul
+                    class="font-Podkova w-36 border-2 border-primary rounded-lg pl-2 bg-[#a0e0f9] block"
+                  >
+                    <li>1 kg Rice</li>
+                    <li>1 Liter Oil</li>
+                    <li>1 kg Wheat</li>
+                    <li>1/2 kg Salt</li>
+                    <li>1 kg Lentil</li>
+                  </ul>
+                </div>
+                <div class="pl-4 pt-6 pr-4 md:pr-0">
+                  <form action="">
+                    <label
+                      for="food"
+                      class="font-Garamond text-xl block md:inline"
+                      >Choose Number of Box You Donate</label
+                    >
+                    <input
+                      type="number"
+                      name="food"
+                      id="food"
+                      class="bg-body border-2 border-primary rounded-md font-Podkova text-lg pl-2 h-8 w-32 md:mt-2"
+                      value="1"
+                    />
+
+                    <br class="hidden md:block" />
+                    <br class="hidden md:block" />
+                    <label
+                      for="dateandtime1"
+                      class="font-Garamond text-xl block md:inline"
+                      >Date and Time</label
+                    >
+                    <input
+                      type="datetime-local"
+                      id="dateandtime1"
+                      name="dateandtime1"
+                      class="bg-body border-2 border-primary rounded-md font-Podkova text-lg w-44 h-8 ml-2 pl-2"
+                    />
+                    <div class="flex justify-center md:mt-5 mb-3">
+                      <button
+                        type="submit"
+                        class="w-[80px] h-10 bg-primary mt-5 text-white text-xl rounded font-Garamond"
+                      >
+                        Go
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-primary py-6">
       <section class="max-w-7xl w-full mx-auto">
@@ -345,53 +381,53 @@
     <script>
       // Get the modal
       var modal = document.getElementById("myModal");
-      
+
       // Get the button that opens the modal
       var btn = document.getElementById("myBtn");
-      
+
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
         modal.style.display = "block";
-      }
-      
+      };
+
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      span.onclick = function () {
         modal.style.display = "none";
-      }
-      
+      };
+
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }
+      };
       var modal1 = document.getElementById("myModal1");
-      
+
       // Get the button that opens the modal
       var btn1 = document.getElementById("myBtn1");
-      
+
       // Get the <span> element that closes the modal
       var span1 = document.getElementsByClassName("close1")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn1.onclick = function() {
+
+      // When the user clicks the button, open the modal
+      btn1.onclick = function () {
         modal1.style.display = "block";
-      }
-      
+      };
+
       // When the user clicks on <span> (x), close the modal
-      span1.onclick = function() {
+      span1.onclick = function () {
         modal1.style.display = "none";
-      }
-      
+      };
+
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal1) {
           modal1.style.display = "none";
         }
-      }
-      </script>
+      };
+    </script>
   </body>
 </html>
